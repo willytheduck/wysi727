@@ -1,0 +1,271 @@
+h1,
+h2,
+h3,
+h4,
+p,
+img,
+div {
+  text-align: center;
+}
+h1 {
+  box-shadow: 5px 5px 5px blue;
+}
+h4 {
+  color: gold;
+}
+#data {
+  display: flex;
+  justify-content: space-evenly;
+}
+.item {
+  border: 5px solid skyblue;
+  background-color: greenyellow;
+  padding: 5px;
+}
+table,
+tr,
+th,
+td {
+  text-align: center;
+  border: 2px solid blue;
+  border-collapse: collapse;
+  font-family: Verdana;
+}
+#center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+th {
+  background-color: goldenrod;
+}
+tr:hover {
+  background-color: gray;
+}
+table {
+  width: 75%;
+}
+td {
+  padding: 10px;
+}
+.better {
+  border: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px gray;
+}
+body {
+  color: burlywood;
+  margin: 10%;
+}
+.style {
+  font-family: "Caveat", serif;
+}
+.betterstyle {
+  font-family: "Josefin Sans", cursive;
+}
+.img {
+  max-width: 100%;
+  max-height: 250px;
+}
+@media (max-width: 600px) {
+  * {
+    font-size: 2vw;
+    margin: 2px;
+  }
+}
+
+footer {
+  /* background-color: rgb(245, 235, 220); */
+  background-image: linear-gradient(rgb(252, 232, 204), rgb(197, 141, 137));
+}
+.main-footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.left-footer {
+  margin-right: auto;
+  margin-left: 40px;
+}
+.right-footer {
+  margin-left: auto;
+  margin-right: 40px;
+}
+.center-footer {
+  margin-left: auto;
+  margin-right: 40px;
+}
+.info-left {
+  color: rgb(219, 84, 75);
+  text-align: left;
+  width: 100%;
+}
+.info-right {
+  color: rgb(219, 84, 75);
+  text-align: right;
+  width: 100%;
+}
+.info-center {
+  color: rgb(219, 84, 75);
+  text-align: center;
+  width: 100%;
+  padding-top: 5px;
+  border-top: 1px solid rgb(146, 168, 133);
+}
+nav {
+  background-color: #333;
+  padding: 10px 0;
+}
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.nav-list li {
+  margin: 0 15px;
+}
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
+}
+.nav-list a:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}
+a {
+  text-decoration: none;
+  color: rgb(219, 84, 75);
+  padding: 15px;
+  float: left;
+}
+a:hover {
+  background-color: burlywood;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.tab:hover {
+  background-color: gold;
+}
+.tab {
+  background-color: lightblue;
+  width: 205px;
+  padding: 40px;
+  margin: 20px;
+  border-radius: 20px;
+}
+h1.name {
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  color: black;
+}
+h2.price {
+  font-size: 38px;
+  color: black;
+}
+.list {
+  list-style-type: disc;
+  margin-bottom: 50px;
+  text-align: left;
+}
+.list li {
+  margin-top: 20px;
+  color: black;
+}
+hr {
+  height: 7px;
+  width: 80%;
+  margin: auto;
+  background-color: aquamarine;
+  border: none;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+div.about {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  background-color: aquamarine;
+  width: 80%;
+}
+.about {
+  text-align: left;
+  color: black;
+  padding: 10px;
+  width: 100%;
+}
+div.image-about {
+  margin-bottom: auto;
+  margin-top: auto;
+}
+img.about-us {
+  max-width: 100%;
+  max-height: 100%;
+}
+button {
+  background-color: rgba(219, 85, 75, 0.616);
+  border-radius: 8px;
+  color: white;
+  padding: 8px;
+  border: none;
+  font-size: 20pt;
+}
+button:hover {
+  transform: scale(1.2, 1.2);
+  background-color: rgb(219, 85, 75);
+}
+button:active {
+  transform: translateX(5px);
+  transform: scale();
+}
+.fa-map-pin,
+.fa-phone,
+.fa-instagram,
+.fa-home,
+.fa-tags,
+.fa-exclamation,
+.fa-laptop,
+.fa-tag {
+  margin: 6px;
+  color: rgb(6, 222, 255);
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.dropdown {
+  display: flex;
+  flex-direction: column;
+}
+.dropdown-content {
+  display: none;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  position: absolute;
+  top: 100%;
+  background-color: antiquewhite;
+}
+.dropdown-item:hover {
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+a.dropdown-item {
+  min-width: 160px;
+  text-align: left;
+}
+li.dropdown-item:hover a.dropdown-item {
+  text-align: left;
+  color: gainsboro;
+}
