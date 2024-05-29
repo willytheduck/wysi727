@@ -2,8 +2,6 @@ h1,
 h2,
 h3,
 h4,
-p,
-img,
 div {
   text-align: center;
 }
@@ -18,9 +16,10 @@ h4 {
   justify-content: space-evenly;
 }
 .item {
-  border: 5px solid skyblue;
-  background-color: greenyellow;
-  padding: 5px;
+  border: 1px solid black;
+  background-color: white;
+  padding: 10px;
+  margin: 5px;
 }
 table,
 tr,
@@ -268,4 +267,20 @@ a.dropdown-item {
 li.dropdown-item:hover a.dropdown-item {
   text-align: left;
   color: gainsboro;
+}
+.flex-container {
+  display: flex;
+}
+p{
+  text-align: center;
+  font-size: 30px;
+}
+img{
+  text-align: center;
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
