@@ -271,14 +271,14 @@ li.dropdown-item:hover a.dropdown-item {
 .flex-container {
   display: flex;
 }
-p{
+p {
   text-align: center;
   font-size: 30px;
 }
-img{
+img {
   text-align: center;
 }
-.center{
+.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
