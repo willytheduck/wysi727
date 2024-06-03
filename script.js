@@ -5,7 +5,7 @@ if (btnSubmit) {
   btnSubmit.addEventListener("click", function () {
     modal.classList.add("show");
     const next = document.querySelector(".next");
-    next.setAttribute("value", "https://theducky.netlify.app/");
+    next.setAttribute("value", "");
   });
 }
 if (btnClose) {
