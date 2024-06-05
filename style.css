@@ -1,11 +1,8 @@
-h1,
-h2,
-h3,
-h4,
-div {
-  text-align: center;
+.betterstyle h1 {
+  background-color: red;
+  box-shadow: 5px 5px 5px black;
 }
-h1{
+.shadowbox {
   background-color: red;
   box-shadow: 5px 5px 5px black;
 }
@@ -55,7 +52,6 @@ td {
 }
 body {
   color: burlywood;
-  margin: 10%;
 }
 .style {
   font-family: "Caveat", serif;
@@ -70,18 +66,37 @@ body {
 @media (max-width: 600px) {
   * {
     font-size: 2vw;
-    margin: 2px;
   }
 }
 
+/* Alternative gradient background */
 footer {
-  /* background-color: rgb(245, 235, 220); */
-  background-image: linear-gradient(rgb(252, 232, 204), rgb(197, 141, 137));
+  background-image: linear-gradient(
+    rgb(230, 180, 130),
+    rgb(200, 120, 90)
+  ); /* Example: Brown gradient */
 }
-.main-footer {
-  display: flex;
-  justify-content: center;
+.info-left {
+  color: saddlebrown;
+  text-align: left;
   width: 100%;
+}
+.info-right {
+  color: saddlebrown;
+  text-align: left;
+  width: 100%;
+}
+.info-center {
+  color: saddlebrown;
+  text-align: center;
+  width: 100%;
+}
+
+/* Add styling for pizza icon (assuming you have a class named 'pizza-icon') */
+.info-right p:nth-child(1) {
+  /* Target the first paragraph in right footer */
+  display: flex;
+  align-items: center;
 }
 .left-footer {
   margin-right: auto;
@@ -95,35 +110,34 @@ footer {
   margin-left: auto;
   margin-right: 40px;
 }
-.info-left {
-  color: rgb(219, 84, 75);
-  text-align: left;
+.main-footer {
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
-.info-right {
-  color: rgb(219, 84, 75);
-  text-align: right;
-  width: 100%;
+h1,
+h2,
+h3,
+h4,
+div {
+  text-align: center; /* Assuming you still want centered headings */
 }
-.info-center {
-  color: rgb(219, 84, 75);
-  text-align: center;
-  width: 100%;
-  padding-top: 5px;
-  border-top: 1px solid rgb(146, 168, 133);
-}
+
 nav {
   background-color: #333;
   padding: 10px 0;
 }
+
 .nav-list {
   list-style-type: none;
   display: flex;
   justify-content: center;
 }
+
 .nav-list li {
   margin: 0 15px;
 }
+
 .nav-list a {
   color: white;
   text-decoration: none;
@@ -131,18 +145,31 @@ nav {
   padding: 8px 16px;
   transition: background-color 0.3s;
 }
+
 .nav-list a:hover {
   background-color: #575757;
   border-radius: 4px;
 }
+
 a {
   text-decoration: none;
   color: rgb(219, 84, 75);
   padding: 15px;
   float: left;
 }
+
 a:hover {
   background-color: burlywood;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  margin-top: 0;
 }
 .container {
   display: flex;
@@ -180,13 +207,14 @@ h2.price {
   color: black;
 }
 hr {
-  height: 7px;
+  height: 10px; /* Thicker line */
   width: 80%;
   margin: auto;
-  background-color: aquamarine;
+  background-color: tomato; /* Reddish orange color */
   border: none;
   border-radius: 50px;
   margin-top: 20px;
+  border-style: dashed; /* Dashed line style */
 }
 div.about {
   display: flex;
@@ -195,12 +223,12 @@ div.about {
   margin-right: auto;
   margin-top: 5px;
   margin-bottom: 30px;
-  background-color: aquamarine;
+  background-color: burlywood;
   width: 80%;
 }
 .about {
   text-align: left;
-  color: black;
+  color: tomato;
   padding: 10px;
   width: 100%;
 }
@@ -237,7 +265,7 @@ button:active {
 .fa-laptop,
 .fa-tag {
   margin: 6px;
-  color: rgb(6, 222, 255);
+  color: tomato;
 }
 ul {
   list-style-type: none;
@@ -287,7 +315,7 @@ img {
 }
 .contact-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .ilustration-img {
   margin: 0px;
@@ -404,4 +432,60 @@ img {
   visibility: hidden;
   opacity: 0;
   transition: visibility 1s, opacity 1s;
+}
+header.main-header {
+  /* Target header with class "main-header" */
+  margin-top: 0px;
+  position: sticky; /* Makes the header sticky */
+  top: 0; /* Positions it at the top of the viewport */
+  left: 0; /* Positions it at the left of the viewport */
+  width: 100%; /* Stretches it to full width */
+  z-index: 10; /* Ensures the header stays on top of other elements */
+}
+body {
+  margin: 0;
+}
+.tab {
+  background-color: lightcoral; /* Light orange color */
+  width: 205px;
+  padding: 40px;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(210, 180, 140, 0.3); /* Light orange shadow */
+}
+
+/* Text color change */
+h1.name,
+h2.price,
+.list li {
+  color: saddlebrown; /* Dark brown color */
+}
+
+/* Hover effect color change */
+.tab:hover {
+  background-color: tomato; /* Reddish orange color */
+}
+
+/* Price color change */
+h2.price {
+  color: maroon; /* Dark red color */
+}
+
+/* Font family change for headings */
+h1.name {
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-family: "Sacramento", cursive; /* Playful font */
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Font family change for list items */
+.list li {
+  margin-top: 20px;
+  font-family: "Open Sans", sans-serif; /* Clean font */
+}
+#products {
+  display: flexbox;
+  justify-content: center;
 }
