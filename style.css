@@ -7,7 +7,7 @@
   box-shadow: 5px 5px 5px black;
 }
 h4 {
-  color: gold;
+  color: burlywood;
 }
 #data {
   display: flex;
@@ -168,8 +168,8 @@ ul {
   margin: 0;
 }
 
-header {
-  margin-top: 0;
+header { /* Replace with your element's class */
+  margin-bottom: -20px; /* Adjust the value as needed */
 }
 .container {
   display: flex;
@@ -216,29 +216,43 @@ hr {
   margin-top: 20px;
   border-style: dashed; /* Dashed line style */
 }
-div.about {
+.about {
   display: flex;
+  flex-wrap: wrap; /* Allow text and image to wrap on smaller screens */
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
   margin-bottom: 30px;
-  background-color: burlywood;
+  background-color: #f5f5f5; /* Light gray background */
   width: 80%;
+  padding: 20px; /* Add some padding for better spacing */
 }
-.about {
+
+.about-image {
+  width: 50%; /* Set image width to half the container width */
+  margin-bottom: 20px; /* Add space between image and text */
+}
+
+.about-text {
+  width: 50%; /* Set text width to half the container width */
   text-align: left;
-  color: tomato;
-  padding: 10px;
-  width: 100%;
+  color: #333333; /* Dark gray text */
+  font-size: 18px; /* Adjust font size for readability */
+  line-height: 1.5; /* Adjust line spacing for better reading flow */
 }
-div.image-about {
-  margin-bottom: auto;
-  margin-top: auto;
+h2.about-text {
+  text-align: left;
+  margin-bottom: 15px; /* Add some space after headings */
+  font-size: 24px; /* Adjust heading size */
+  line-height: 1.2;
 }
-img.about-us {
-  max-width: 100%;
-  max-height: 100%;
+
+h3.about-text {
+  text-align: left;
+  margin-bottom: 10px; /* Add some space after subheadings */
+  font-size: 20px; /* Adjust subheading size */
+  line-height: 1.2;
 }
 button {
   background-color: rgba(219, 85, 75, 0.616);
@@ -302,7 +316,7 @@ li.dropdown-item:hover a.dropdown-item {
 }
 p {
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
 }
 img {
   text-align: center;
@@ -435,7 +449,7 @@ img {
 }
 header.main-header {
   /* Target header with class "main-header" */
-  margin-top: 0px;
+  margin-top: -20px;
   position: sticky; /* Makes the header sticky */
   top: 0; /* Positions it at the top of the viewport */
   left: 0; /* Positions it at the left of the viewport */
